@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <style>
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            text-align: center;
+            margin-top: -15px;
+        }
+       body{
+           font-family: Arial, Helvetica, sans-serif;
+           background-image: linear-gradient(45deg, cyan, green);
+       }
+       .tela-login{
+            background-color: rgba(0, 0, 0, .7);   /* alpha é a trasnparencia */
+            position: absolute; /* ocupa apenas o espaço de seus elementos */
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%, -50%); /*entendi que foi para centralizar no meio angulo x e y*/
+            padding: 70px; /*distancia entre os elementos e a borda */
+            border-radius: 50px;
+            color: white;
+            box-shadow: 8px 8px 10px lightgreen;
+       }
+       input{
+           padding: 15px;
+           border: none;
+           outline: none; /* retirar a linha que fica em volta quando clica para selecionar */
+           font-size: 15px;
+           border-radius: 30px;
+       }
+       button{
+           background-color: dodgerblue;
+           border: none;
+           padding: 15px; /*distancia entre os elementos e a borda */
+           width: 100%;
+           border-radius: 24px;
+           color: white;
+           font-size: 15px;
+       }
+       button:hover { /* quando passar o mouse por cima */
+           background-color: deepskyblue;
+           cursor: pointer;
+           box-shadow: 0px 0px 20px khaki;
+
+       }
+    </style>
+</head>
+<body>
+    <div class="tela-login">
+        <h1>login</h1>
+        <input type="text" placeholder="Nome"> 
+        <br><br>
+        <input type="password" placeholder="Senha">
+        <br><br>
+        <button>Enviar</button>
+    </div>
+</body>
+</html>
